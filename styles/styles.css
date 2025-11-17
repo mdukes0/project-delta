@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --goodreads-brown: #553b08;
+  --goodreads-text: #382110;
+  --goodreads-bg: #f4f1ea;
+  --goodreads-border: #e6dfd3;
+  --goodreads-accent: #a97b3b;
+}
+
+* {
+  font-family: 'Merriweather', serif;
+}
+
+/* footer */
+
+.footer {
+  background: var(--goodreads-bg);             
+  border-top: 2px solid var(--goodreads-border);
+  padding: 16px 0;
+  margin-top: 40px;
+  text-align: center;
+  color: var(--goodreads-text);                
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: var(--goodreads-brown);              
+  text-decoration: none;
+  font-weight: 600;                            
+}
+
+.footer a:hover {
+  color: var(--goodreads-accent);         
+}
+
+/* Intro page */
+
+.intro-card {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  color: var(--goodreads-text);
+  border: solid 5px var(--goodreads-brown);
+  background: var(--goodreads-bg);
+  text-align: center;
+}
+
+.problem-card {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  color: var(--goodreads-text);
+  border: solid 5px var(--goodreads-brown);
+  background: var(--goodreads-bg);
+  text-align: center;
+}
+
+.solution-card {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  color: var(--goodreads-text);
+  border: solid 5px var(--goodreads-brown);
+  background: var(--goodreads-bg);
+  text-align: center;
+}
+
+/* examples */
+
+.examples {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* image examples */
+
+.example-one, .example-two, .example-three {
+  background: #fff;
+  border: 1px solid var(--goodreads-border);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+.example-one h4, .example-two h4, .example-three h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  color: var(--goodreads-brown);
+}
+
+.example-one img, .example-two img, .example-three img {
+  width: 100%;
+  max-width: 420px;   
+  border-radius: 8px;
+  border: 1px solid var(--goodreads-border);
+  margin-bottom: 10px;
+}
+
+.example-one p, .example-two p, .example-three p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--goodreads-text);
+}
+
+/* mock-up */
+
+.topbar {
+  position: sticky; top: 0; z-index: 1000;
+  background: var(--goodreads-bg);
+  border-bottom: 2px solid var(--goodreads-border);
+  padding: 10px 16px;
+}
+.bar {
+  display: grid;
+  grid-template-columns: max-content 1fr; 
+  align-items: center;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;                          
+}
+
+.logo {
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--goodreads-brown);
+  white-space: nowrap; line-height: 1;
+}
+.search-input {
+  width: 100%; height: 42px;
+  padding: 0 14px;
+  border: 2px solid var(--goodreads-border);
+  border-radius: 8px; background: #fff;
+  font-size: 1rem; color: var(--goodreads-text);
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--goodreads-accent);
+  box-shadow: 0 0 0 2px rgba(169,123,59,.15);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 24px auto;        
+  padding: 0 16px;         
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--goodreads-border);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+  margin-bottom: 16px;     
+}
+
+/* book card */
+
+.book-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;  
+  gap: 16px;
+  align-items: flex-start;
+  position: relative;               
+}
+
+.book-cover {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--goodreads-border);
+  object-fit: cover;
+}
+
+/* Right side text area */
+
+.book-info {
+  position: relative;
+}
+
+.book-title {
+  font-size: 1.3rem;
+  margin: 0 0 4px 0;
+  color: var(--goodreads-text);
+}
+
+.book-author {
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.book-rating {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: var(--goodreads-brown);
+  font-weight: 600;
+}
+
+/* Blurb */
+
+.book-blurb {
+  font-size: 0.95rem;
+  margin: 0 0 10px 0;
+}
+
+.book-genre {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--goodreads-brown);
+  margin: 0 0 6px 0;
+}
+
+.book-details {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Share icon */
+
+.share-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.share-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* popup */
+
+.share-square {
+  position: absolute;
+  top: 40px;        
+  right: 0;
+  width: 260px;
+  padding: 16px;
+  background: #ffffff;
+  border: 2px solid var(--goodreads-border);
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  display: none;    
+  z-index: 20;
+}
+
+.share-square.active {
+  display: block;    
+}
+
+.share-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--goodreads-text);
+  margin-bottom: 12px;
+}
+
+/* share option buttons */
+
+.share-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.share-option {
+  padding: 8px 10px;
+  text-align: left;
+  border: 1px solid var(--goodreads-border);
+  background: var(--goodreads-bg);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.share-option:hover {
+  background: #eae6dd;
+}
+
+/* X button */
+
+.close-share {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.close-share img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* Solution page */
+
+/* slide-up friends sheet */
+
+.share-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-top: 2px solid var(--goodreads-border);
+  box-shadow: 0 -4px 14px rgba(0,0,0,0.18);
+  padding: 18px 24px 24px;
+  max-height: 60vh;
+  overflow-y: auto;
+
+  transform: translateY(100%);   
+  transition: transform 0.3s ease-out;
+  z-index: 50;
+}
+
+.share-sheet.active {
+  transform: translateY(0);      
+}
+
+.share-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.share-sheet-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--goodreads-text);
+}
+
+.share-sheet-subtitle {
+  margin: 4px 0 10px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* close (X) button in header */
+
+.close-sheet {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.close-sheet img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* Friends list */
+
+.friend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.friend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--goodreads-border);
+}
+
+.friend-name {
+  font-size: 0.96rem;
+}
+
+.friend-send {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--goodreads-border);
+  background: var(--goodreads-bg);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.friend-send:hover {
+  background: #eae6dd;
+}
+
+/* Divider between friends and alt options */
+
+.share-sheet-divider {
+  margin: 14px 0;
+  border-top: 1px solid var(--goodreads-border);
+}
+
+/* Bottom share options */
+
+.share-alt-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.share-alt-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--goodreads-border);
+  background: var(--goodreads-bg);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.share-alt-btn:hover {
+  background: #eae6dd;
+}
