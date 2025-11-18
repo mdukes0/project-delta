@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="/styles/styles.css">
 
   <!-- Fix favicon error -->
+  <!-- https://groups.google.com/g/mojolicious/c/pE3s7_MHpnM?pli=1 -->
   <link rel="icon" href="favicon.ico">
 
-  <title>Project Introduction</title>
+  <title>mock-up page</title>
 </head>
 
 <body>
@@ -26,10 +27,10 @@
       <a class="nav-link" href="/index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/pages/problem.html">Problem</a>
+      <a class="nav-link active" aria-current="page" href="/pages/problem.html">Problem</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/pages/solution.html">Solution</a>
+      <a class="nav-link" href="/pages/solution.html">Solution</a>
     </li>
   </ul>
 
@@ -42,13 +43,10 @@
     </div>
   </header>
 
-
   <main class="page">
 
     <!-- book card -->
-
     <section class="card book-card">
-
       <img src="/images/bookCover.jpg" alt="Decorative peacock cover of Pride and Prejudice by Jane Austen"
         class="book-cover" />
 
@@ -56,15 +54,31 @@
 
         <!-- share icon -->
 
-        <button class="share-icon" aria-label="Share this book">
+        <button class="share-icon" aria-label="Share">
           <img src="/images/share.png" alt="" aria-hidden="true" />
         </button>
+
+        <!-- popup -->
+        <div class="share-square" id="shareSquare">
+          <button class="close-share" aria-label="Close share menu">
+            <img src="/images/exitIcon.png" alt="">
+          </button>
+
+          <h3 class="share-title">Share this book</h3>
+
+          <div class="share-options">
+            <button class="share-option">Facebook</button>
+            <button class="share-option">Twitter</button>
+            <button class="share-option">Pinterest</button>
+            <button class="share-option">Copy URL</button>
+          </div>
+        </div>
+
+        <!-- blurb/book info -->
 
         <h2 class="book-title">Pride and Prejudice</h2>
         <p class="book-author">by Jane Austen</p>
         <p class="book-rating">Rating: 4.29</p>
-
-        <!-- blurb/book info -->
 
         <p class="book-blurb">
           Pride and Prejudice has charmed generations of readers for more than two centuries.
@@ -75,7 +89,7 @@
           anonymous writer throughout her life.
         </p>
 
-        <p class="book-genre">Classics</p>
+        <p class="book-genre">Genre: <u>Classics</u></p>
 
         <p class="book-details">
           400 pages, Hardcover<br>
@@ -83,72 +97,28 @@
         </p>
 
       </div>
+
     </section>
+
+    <section class="card info-card">
+      <h2>The Problem</h2>
+      <p>
+        As you can see, despite having a friends feature the process of sharing a book to a friend is convulated. You
+        only have the option of a few social media apps that you may or may not have, or a url which you would have to
+        send through your chosen message app on your computer. While not too uncommon to have such an app, some people
+        own laptops that may not connect to your phone immediatly like apple owner.
+      </p>
+    </section>
+
   </main>
 
-  <!-- slide-up sheet -->
-
-  <div class="share-sheet" id="shareSheet">
-    <div class="share-sheet-header">
-      <h3 class="share-sheet-title">Share with friends</h3>
-      <button class="close-sheet" aria-label="Close share panel">
-        <img src="/images/exitIcon.png" alt="">
-      </button>
-    </div>
-
-    <p class="share-sheet-subtitle">
-      Select which friends to send this book to:
-    </p>
-
-    <ul class="friend-list">
-      <li class="friend-row">
-        <span class="friend-name">John Doe</span>
-        <button class="friend-send">Send</button>
-      </li>
-      <li class="friend-row">
-        <span class="friend-name">bookreader123</span>
-        <button class="friend-send">Send</button>
-      </li>
-      <li class="friend-row">
-        <span class="friend-name">Meryl Green</span>
-        <button class="friend-send">Send</button>
-      </li>
-      <li class="friend-row">
-        <span class="friend-name">Azure123</span>
-        <button class="friend-send">Send</button>
-      </li>
-    </ul>
-
-    <div class="share-sheet-divider"></div>
-
-    <p class="share-sheet-subtitle">
-      Or share another way:
-    </p>
-
-    <div class="share-alt-options">
-      <button class="share-alt-btn">Facebook</button>
-      <button class="share-alt-btn">Twitter</button>
-      <button class="share-alt-btn">Pinterest</button>
-      <button class="share-alt-btn">Copy URL</button>
-    </div>
-  </div>
-
-  <section class="card info-card">
-    <h2>The Solution</h2>
-    <p>
-      Now when a user clicks the share icon it will open a slide-up sheet with an list of friends
-      to directly select from. On the bottom are the same social media options as before, inluding the copy url. This
-      makes it much easier and far more direct to share books others on goodreads.
-    </p>
-  </section>
-
-   <footer class="footer">
+  <footer class="footer">
     <a href="https://github.com/mdukes0/project-delta.git" target="_blank">GitHub repo</a>
     <a href="https://mdukes0.github.io/project-delta/" target="_blank">Live link</a>
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmdukes0.github.io/project-delta/solution.html"
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmdukes0.github.io/project-delta/problem.html"
       target="_blank">Nu
       link</a>
-    <a href="https://wave.webaim.org/report#/https://mdukes0.github.io/project-delta/solution.html" target="_blank">WAVE
+    <a href="https://wave.webaim.org/report#/https://mdukes0.github.io/project-delta/problem.html" target="_blank">WAVE
       link</a>
   </footer>
 
