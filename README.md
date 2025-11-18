@@ -131,5 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
 - -Nomralize.css (CDN)
 - Bootstrap 5 (CDN)
 - ChatGPT-5.1 (error review, JavaScript, slide-sheet CSS & HTML, README review)
+- Google groups (for favicon)
 
 
